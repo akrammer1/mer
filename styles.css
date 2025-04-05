@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Paprika&family=Poppins:wght@700&family=Roboto:ital,wdth,wght@0,75..100,700;1,75..100,700&display=swap');
+
+*{
+   margin: 6;
+   padding: 6;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(3, 32, 34);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 0 0 .5rem;
+    max-width: 1200px;
+    font-size: 2rem;
+   
+}
+.navigation ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.navigation a{
+    text-decoration: none;
+    color: cornsilk;
+}
+.navigation a:hover{
+    color: rgb(168, 10, 10);
+}
+ hr{
+    opacity: 50%;
+ }
+
+ .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    max-width: 1200px;
+ }
+.arrow{
+    position: static;
+    transform: translateX(-0.5rem) translateY(1.5rem)
+}
+.herosub {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   
+}
+.name {
+    font-size: 5.5rem;
+    color: rgb(231, 207, 174);
+}
+.title {
+    font-size:5rem;
+    color: rgb(103, 237, 241);
+}
+.heroBtns {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+.hireme {
+    background-color: rgb(162, 0, 255);
+    color: aliceblue;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 4px 4px rgb(0, 0, 0.5);
+    font-size: 2rem;
+}
+.cv {
+    background-color: rgb(52, 51, 53);
+    color: aliceblue;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 4px 4px rgb(0, 0, 0.5);
+    gap: 1rem;
+    backdrop-filter: blur(4px);
+    font-size: 1.5rem;
+}
+.aboutMe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    gap: 10rem;
+}
+.textcontainer {
+    display: flex;
+    flex-direction: column;
+}
+.textTitel {
+    display: flex;
+    align-items: center;
+    gap: 2px;  
+    font-size: 5rem;
+}
+.AbautName {
+    color: azure;
+}
+.AbautTitel {
+    color: aqua;
+}
+.aboutMePar {
+    text-align: justify;
+    color: rgb(160, 160, 160);
+}
+.works {
+    background-image: url("assets/svg/background.svg");
+    padding: 10rem 10rem;
+    margin: 5rem 0rem;
+}
+.worksContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    margin: 5rem auto;
+    min-width: 1200px;
+}
+.projectTitle {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2px;
+    font-size: 3rem;
+}
+.works ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.works li {
+    border-radius: 16px;
+    background-color: rgb(4, 49, 51);
+    backdrop-filter: blur(4px);
+    padding: 1rem 4rem;
+
+
+}
+.works li img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+.works li:hover {
+    transform:scale(1.5);
+}
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    gap: 2rem;
+}
+.contactTitel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 3rem;
+    margin-bottom:10px ; 
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20rem;
+    margin-right: 5rem;
+}
+.contact h3, .contact a {
+    color: aliceblue;
+    text-decoration: none;
+}
+.emailAndPhone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.socialMedia a {
+    border-radius: 50px;
+    background-color: rgb(4, 49, 51);
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialMedia img {
+    width: 24px;
+    height: 24px;
+}
+footer {
+    color: rgb(161, 162, 163);
+    padding: 2rem;
+    text-align: center;
+}
+@media (max-width: 1023px) {
+    header {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      .hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+      .heroImg {
+        width: 400px;
+      }
+      .name,
+      .title {
+        font-size: 2rem;
+      }
+      .arrow {
+        display: none;
+      }
+      .aboutMe {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+      }
+      .textContainer {
+        align-items: center;
+        margin: 0rem 5rem;
+        gap: 1rem;
+      }
+      .aboutName,
+      .aboutTitle {
+        font-size: 2rem;
+      }
+      .light {
+        width: 60px;
+      }
+      .aboutMeImg {
+        width: 400px;
+      }
+      .works {
+        padding: 0;
+      }
+      .worksContainer {
+        padding: 5rem 0rem;
+        gap: 3rem;
+      }
+      .projectTitle {
+        margin-left: 1rem;
+      }
+      .works ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .contactContainer {
+        margin: 10rem 5rem;
+        gap: 2rem;
+      }
+      .contact {
+        flex-direction: column;
+        gap: 1rem;
+        margin-right: 0;
+      }
+    }
